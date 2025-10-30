@@ -23,6 +23,7 @@ const Index = () => {
         "2D floor plans",
         "Standard material selection",
         "Email support"
+        
       ],
       color: "bg-red-500"
     },

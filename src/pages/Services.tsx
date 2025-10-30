@@ -12,7 +12,7 @@ const Services = () => {
       id: "good-plus",
       name: "Good Plus",
       tagline: "Perfect for starter homes",
-      price: "$5,000 - $10,000",
+      price: "Rs29 - Rs.69/sq.ft",
       color: "bg-red-500",
       features: [
         "Basic architectural design",
@@ -21,47 +21,48 @@ const Services = () => {
         "Email support",
         "1 revision round"
       ],
-      timeline: "4-6 weeks"
+      timeline: "1-2 weeks"
     },
     {
       id: "better-plus",
       name: "Better Plus",
       tagline: "Enhanced design experience",
-      price: "$12,000 - $20,000",
+      price: "Rs.99 - Rs.129/sq.ft",
       color: "bg-pink-500",
       features: [
         "Enhanced architectural design",
-        "3D renderings",
+        "3D Interior & Exterior renderings",
         "Premium material selection",
         "Priority support",
         "2 revision rounds",
         "Basic structural consultation"
       ],
-      timeline: "6-8 weeks"
+      timeline: "2-4 weeks"
     },
     {
       id: "quad-plus",
       name: "Quad Plus",
       tagline: "Our most popular package",
-      price: "$25,000 - $40,000",
+      price: "Rs.129 - Rs.149/Sq.ft",
       color: "bg-orange-500",
       features: [
         "Premium architectural design",
-        "3D & 4D renderings",
+        "Full 3D/VR experience",
+        "3D Interior & Exterior renderings",
         "Luxury material selection",
         "Dedicated architect",
         "Unlimited revisions",
         "Full structural consultation",
         "MEP integration",
-        "Project timeline"
+        "Project Management"
       ],
-      timeline: "8-12 weeks"
+      timeline: "3-6 weeks"
     },
     {
       id: "luxury-plus",
       name: "Luxury Plus",
       tagline: "The ultimate design experience",
-      price: "$50,000+",
+      price: "Rs.129+",
       color: "bg-purple-500",
       features: [
         "Custom luxury design",
@@ -74,7 +75,7 @@ const Services = () => {
         "Construction supervision",
         "Smart home integration"
       ],
-      timeline: "12-16 weeks"
+      timeline: "6-8 weeks"
     }
   ];
 
@@ -202,9 +203,16 @@ const Services = () => {
                       ))}
                     </ul>
                     <div className="flex flex-col sm:flex-row gap-4">
-                      <Button size="lg" className="bg-red-500 hover:bg-red-600 text-white flex-1 py-6">
-                        Select This Package
-                      </Button>
+                      <Button
+  size="lg"
+  className="bg-red-500 hover:bg-red-600 text-white flex-1 py-6"
+  onClick={() => {
+    // Navigate to contact page with package query param
+    window.location.href = `/contact?package=${pkg.name.replace(/\s+/g, "-")}`;
+  }}
+>
+  Select This Package
+</Button>
                       <Button size="lg" variant="outline" className="border-2 border-gray-300 flex-1 py-6">
                         Request Custom Quote
                       </Button>

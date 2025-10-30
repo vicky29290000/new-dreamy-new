@@ -40,18 +40,18 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: MapPin,
-      title: "Our Office",
-      details: "123 Architecture Avenue, Design District, DD 10001"
+      title: "Quad Plus Architects",
+      details: "Pillaiyarpatti, Thanjavur District, Tamil Nadu 613403"
     },
     {
       icon: Phone,
       title: "Call Us",
-      details: "+1 (555) 123-4567"
+      details: "+91 97871-55330"
     },
     {
       icon: Mail,
       title: "Email Us",
-      details: "info@quadplusarchitects.com"
+      details: "architectsquadplus@gmail.com"
     },
     {
       icon: Clock,
@@ -103,7 +103,7 @@ const Contact = () => {
                           name="name"
                           value={formData.name}
                           onChange={handleChange}
-                          placeholder="John Smith"
+                          placeholder="Vignesh Nehru"
                           className="pl-10"
                           required
                         />
@@ -119,7 +119,7 @@ const Contact = () => {
                           type="email"
                           value={formData.email}
                           onChange={handleChange}
-                          placeholder="john@example.com"
+                          placeholder="Vigneshnehru@quadplus.com"
                           className="pl-10"
                           required
                         />
@@ -192,11 +192,22 @@ const Contact = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
+  <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3910.234456789123!2d79.07737261523043!3d10.73628252589173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baabff7bc2ef745%3A0xd221618d66fa63f8!2sQuad%20Plus%20Architects!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+  width="100%"
+  height="300"
+  style={{ border: 0 }}
+  allowFullScreen
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+  className="rounded-lg"
+/>
+
                   <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">
                     <div className="text-center">
                       <Building2 className="w-12 h-12 text-gray-400 mx-auto mb-2" />
                       <p className="text-gray-500">Interactive Map</p>
-                      <p className="text-sm text-gray-400 mt-1">123 Architecture Avenue, Design District</p>
+                      <p className="text-sm text-gray-400 mt-1">Near Kamarajar Statue, pillaiyarpatti,Thanjavur District</p>
                     </div>
                   </div>
                 </CardContent>
